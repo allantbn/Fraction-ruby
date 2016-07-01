@@ -1,5 +1,5 @@
 describe "Is this thing on?" do
 	it "fails!" do
-		1.should == 2
+		1.should == 1
 	end
 end
