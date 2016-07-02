@@ -4,7 +4,7 @@ class Fraction
 	end
 
 	def plus(another)
-		Fraction.new(0)
+		Fraction.new(@integerValue)
 	end
 	
 	def int_value
