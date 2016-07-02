@@ -20,4 +20,9 @@ describe "Add Fractions Test" do
 	sum = Fraction.new(3).plus(Fraction.new(4)).int_value
 	sum.should == 7
 	end
+	
+	it "negative inputs and negative output" do
+	sum = Fraction.new(-3).plus(Fraction.new(1)).int_value
+	sum.should == -2
+	end
 end
