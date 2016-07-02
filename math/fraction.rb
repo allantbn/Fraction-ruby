@@ -1,12 +1,14 @@
 class Fraction
 	def initialize (integerValue)
-		@i = integerValue
+		@integerValue = integerValue
 	end
-	def i 
-		@i
+
+	def plus(another)
+		Fraction.new(0)
 	end
-	def self.plus(i)
-		return i; 
+	
+	def int_value
+		@integerValue
 	end
 end
 
