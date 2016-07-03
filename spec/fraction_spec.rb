@@ -25,4 +25,10 @@ describe "Add Fractions Test" do
 	sum = Fraction.new(-3).plus(Fraction.new(1)).int_value
 	sum.should == -2
 	end
+	
+	it "non trivial denominator" do
+	sum = Fraction.new(1, 5).plus(Fraction.new(2, 5))
+	sum.integerValue.should == 3
+	sum.denominatorValue.should == 5
+	end
 end
