@@ -1,8 +1,10 @@
 class Fraction
 	attr_reader :integerValue
 	attr_reader :denominatorValue
+	attr_reader :numerator
 	def initialize (numerator, denominator = 1)
 		@integerValue = numerator
+		@numerator = numerator
 		@denominatorValue = denominator
 	end
 
