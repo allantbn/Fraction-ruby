@@ -14,6 +14,13 @@ class Fraction
 		@numerator
 	end
 	
+	def eql?(other)
+		if (@numerator = other.numerator && @denominator = other.denominator)
+			return true
+		end
+		return false
+	end
+	
 end
 
 
