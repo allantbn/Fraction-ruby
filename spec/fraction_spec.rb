@@ -35,4 +35,9 @@ describe "Add Fractions Test" do
 	it "same numberator and denominator" do
 		expect(Fraction.new(1,5).eql?(Fraction.new(1,5))).to eq(true)
 	end
+	
+	it "different numberator and same denominator" do
+		expect(Fraction.new(3,5).eql?(Fraction.new(1,5))).to eq(false)
+	end
+	
 end

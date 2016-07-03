@@ -1,6 +1,6 @@
 class Fraction
-	attr_reader :denominator
-	attr_reader :numerator
+	attr_reader :numerator,:denominator
+	
 	def initialize (numerator, denominator = 1)
 		@numerator = numerator
 		@denominator = denominator
@@ -15,7 +15,7 @@ class Fraction
 	end
 	
 	def eql?(other)
-		if (@numerator = other.numerator && @denominator = other.denominator)
+		if (@numerator == other.numerator && @denominator == other.denominator)
 			return true
 		end
 		return false
