@@ -1,13 +1,13 @@
 class Fraction
-	attr_reader :denominatorValue
+	attr_reader :denominator
 	attr_reader :numerator
 	def initialize (numerator, denominator = 1)
 		@numerator = numerator
-		@denominatorValue = denominator
+		@denominator = denominator
 	end
 
 	def plus(another_integerValue)
-			Fraction.new(@numerator + another_integerValue.numerator, @denominatorValue)
+			Fraction.new(@numerator + another_integerValue.numerator, @denominator)
 	end
 	
 	def int_value
