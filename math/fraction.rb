@@ -9,11 +9,11 @@ class Fraction
 	end
 
 	def plus(another_integerValue)
-			Fraction.new(@integerValue + another_integerValue.integerValue, @denominatorValue)
+			Fraction.new(@numerator + another_integerValue.numerator, @denominatorValue)
 	end
 	
 	def int_value
-		@integerValue
+		@numerator
 	end
 	
 end
