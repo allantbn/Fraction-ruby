@@ -28,8 +28,7 @@ describe "Add Fractions Test" do
 	
 	it "non trivial denominator" do
 		sum = Fraction.new(1, 5).plus(Fraction.new(2, 5))
-		sum.numerator.should == 3
-		sum.denominator.should == 5
+		expect(Fraction.new(3,5).eql?(sum)).to eq(true)
 	end
 	
 	
