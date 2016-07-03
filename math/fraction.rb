@@ -18,7 +18,7 @@ class Fraction
 		if (@numerator == other.numerator && @denominator == other.denominator)
 			return true
 		end
-		return false
+		false
 	end
 	
 end
