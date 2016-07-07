@@ -1,6 +1,7 @@
 require "./math/fraction"
 
 describe "Add Fractions Test" do
+
 	it "adds zero plus zero" do
 		sum = Fraction.new(0).plus(Fraction.new(0)).int_value
 		sum.should == 0
