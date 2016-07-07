@@ -2,7 +2,7 @@ class Fraction
 	attr_reader :numerator,:denominator
 	
 	def initialize (numerator, denominator = 1)
-		gcd = 1
+		gcd = NumberTheory.gcd(numerator, denominator)
 		@numerator = numerator / gcd
 		@denominator = denominator / gcd
 	end
