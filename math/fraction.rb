@@ -21,6 +21,10 @@ class Fraction
 		false
 	end
 	
+	def ==(other)
+		eql?(other)
+	end
+	
 end
 
 

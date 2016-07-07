@@ -2,7 +2,7 @@ require "./math/fraction"
 
 describe "Equals Fractions Test" do
 it "same numberator and denominator" do
-		expect(Fraction.new(1,5).eql?(Fraction.new(1,5))).to eq(true)
+		expect(Fraction.new(1,5)).to eq(Fraction.new(1,5))
 	end
 	
 	it "different numberator and same denominator" do
