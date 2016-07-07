@@ -2,8 +2,9 @@ class Fraction
 	attr_reader :numerator,:denominator
 	
 	def initialize (numerator, denominator = 1)
-		@numerator = numerator
-		@denominator = denominator
+		gcd = 1
+		@numerator = numerator / gcd
+		@denominator = denominator / gcd
 	end
 
 	def plus(that)
