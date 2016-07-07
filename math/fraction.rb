@@ -6,11 +6,11 @@ class Fraction
 		@denominator = denominator
 	end
 
-	def plus(another_integerValue)
-		if (@denominator != another_integerValue.denominator) 
-			Fraction.new(@numerator * another_integerValue.denominator + another_integerValue.numerator * @denominator, @denominator * another_integerValue.denominator)
+	def plus(that)
+		if (@denominator != that.denominator) 
+			Fraction.new(@numerator * that.denominator + that.numerator * @denominator, @denominator * that.denominator)
 		else
-			Fraction.new(@numerator + another_integerValue.numerator, @denominator)
+			Fraction.new(@numerator + that.numerator, @denominator)
 		end
 	end
 	
