@@ -31,7 +31,7 @@ describe "Add Fractions Test" do
 		expect(Fraction.new(3, 5)).to eq(sum)
 	end
 
-	it "different denominator" do
+	it "different denominator without reduction" do
 		sum = Fraction.new(1, 2).plus(Fraction.new(1, 3))
 		expect(Fraction.new(5, 6)).to eq(sum)
 	end
