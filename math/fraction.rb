@@ -1,3 +1,5 @@
+require "./math/numberTheory"
+
 class Fraction
 	attr_reader :numerator,:denominator
 	

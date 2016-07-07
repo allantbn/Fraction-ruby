@@ -10,4 +10,8 @@ describe "Reduce Fraction" do
 	it "reduce to not whole number" do
 		expect(Fraction.new(3, 4)).to eq(Fraction.new(6, 8))
 	end
+	  
+	it "reduce whole number" do
+		expect(Fraction.new(24, 4)).to eq(Fraction.new(6))
+	end
 end
