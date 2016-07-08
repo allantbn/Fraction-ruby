@@ -4,7 +4,8 @@ class Fraction
 	attr_reader :numerator,:denominator
 	
 	def initialize (numerator, denominator = 1)
-		gcd = NumberTheory.gcd(numerator, denominator)
+		signOfDenominator = denominator < 0 ? -1 : 1
+		gcd = NumberTheory.gcd(numerator, denominator) * signOfDenominator
 		@numerator = numerator / gcd
 		@denominator = denominator / gcd
 	end

@@ -21,4 +21,9 @@ describe "Equals Fractions Test" do
 	it "whole number not equals different whole number" do
 		expect(Fraction.new(5)).to_not eq(Fraction.new(6))
 	end
+	
+	it "negative denominator" do
+		expect(Fraction.new(-1, -2)).to eq(Fraction.new(1, 2))
+		expect(Fraction.new(1, -2)).to eq(Fraction.new(1, -2))
+	end
 end
