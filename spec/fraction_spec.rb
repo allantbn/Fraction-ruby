@@ -58,7 +58,7 @@ describe "Add Fractions Test" do
 		expect(Fraction.new(3, 8).plus(Fraction.new(-1, 2))).to eq(Fraction.new(-1, 8))
 	end
 	
-	xit "negative signs everywhere" do
+	it "negative signs everywhere" do
 		expect(Fraction.new(1, -4).plus(Fraction.new(-3, -4))).to eq(Fraction.new(1, 2))
 	end
 end
