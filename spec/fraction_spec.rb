@@ -40,4 +40,25 @@ describe "Add Fractions Test" do
 	it "reduce result to whole number" do
 		expect(Fraction.new(1, 3).plus(Fraction.new(2, 3))).to eq(Fraction.new(1))
 	end
+	
+	it "one denominators is a multiple of the other" do
+		expect(Fraction.new(3, 4).plus(Fraction.new(5, 8))).to eq(Fraction.new(11, 8))
+	end
+	
+	it "common factor in denominators" do
+		expect(Fraction.new(1, 6).plus(Fraction.new(4, 9))).to eq(Fraction.new(11, 18))
+	end
+	
+	it "reduce result even when denominator are the same" do
+		expect(Fraction.new(3, 4).plus(Fraction.new(3, 4))).to eq(Fraction.new(3, 2))
+	end
+	
+	it "negative fraction and reducing" do
+		expect(Fraction.new(-1, 4).plus(Fraction.new(3, 4))).to eq(Fraction.new(1, 2))
+		expect(Fraction.new(3, 8).plus(Fraction.new(-1, 2))).to eq(Fraction.new(-1, 8))
+	end
+	
+	xit "negative signs everywhere" do
+		expect(Fraction.new(1, -4).plus(Fraction.new(-3, -4))).to eq(Fraction.new(1, 2))
+	end
 end
