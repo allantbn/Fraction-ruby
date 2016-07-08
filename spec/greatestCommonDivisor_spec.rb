@@ -30,5 +30,11 @@ describe "test gcd" do
 		expect(4).to eq(NumberTheory.gcd(-24, 28))
 	end
 	
+	it "zero" do
+		expect(1).to eq(NumberTheory.gcd(1, 0))
+		expect(5).to eq(NumberTheory.gcd(0, 5))
+		expect(0).to eq(NumberTheory.gcd(0, 0))
+	end
+	
 end
  
