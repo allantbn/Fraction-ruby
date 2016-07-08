@@ -36,4 +36,8 @@ describe "Add Fractions Test" do
 		sum = Fraction.new(1, 2).plus(Fraction.new(1, 3))
 		expect(Fraction.new(5, 6)).to eq(sum)
 	end
+	
+	it "reduce result to whole number" do
+		expect(Fraction.new(1, 3).plus(Fraction.new(2, 3))).to eq(Fraction.new(1))
+	end
 end
