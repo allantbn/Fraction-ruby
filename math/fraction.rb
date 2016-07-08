@@ -11,11 +11,7 @@ class Fraction
 	end
 
 	def plus(that)
-		if (@denominator != that.denominator) 
 			Fraction.new(@numerator * that.denominator + that.numerator * @denominator, @denominator * that.denominator)
-		else
-			Fraction.new(@numerator + that.numerator, @denominator)
-		end
 	end
 	
 	def int_value
